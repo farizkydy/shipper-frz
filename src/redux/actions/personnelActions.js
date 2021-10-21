@@ -6,8 +6,6 @@ export const getPersonnelLists = () => (dispatch) => {
   return axios
     .get(`${BASE_URL}`)
     .then((response) => {
-      console.log(response.data.results);
-      console.log(response.data.info);
       dispatch({
         type: GET_PERSONNEL_LISTS,
         payload: response.data.results,
