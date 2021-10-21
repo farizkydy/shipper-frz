@@ -45,7 +45,7 @@ function Sidebar() {
               </div>
               <div>
                 <NavLink
-                  to="/daily-attendance"
+                  to="/pickup"
                   className="navlink"
                   activeClassName="navLinkActive"
                 >

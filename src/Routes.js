@@ -1,4 +1,4 @@
-import DailyAttendance from "./pages/DailyAttendance";
+import PickUp from "./pages/PickUp";
 import Home from "./pages/Home";
 import PersonnelList from "./pages/PersonnelList";
 
@@ -14,8 +14,8 @@ export const tempPublicRoutes = [
     exact: true,
   },
   {
-    component: DailyAttendance,
-    path: "/daily-attendance",
+    component: PickUp,
+    path: "/pickup",
     exact: true,
   },
 ];

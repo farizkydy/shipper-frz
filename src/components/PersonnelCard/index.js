@@ -25,7 +25,7 @@ function PersonnelCard(props) {
       </CardFooter>
       <div className="cardImage-body">
         <div>
-          <CardImg src={image} />
+          <CardImg src={image} loading="lazy"/>
         </div>
         <div>
           <CardBody>

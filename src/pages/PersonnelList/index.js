@@ -20,14 +20,15 @@ function PersonnelList() {
 
   // fetching data using useEffect and useDispatch
   useEffect(() => {
+  if (!personnelLists) {
     dispatch(getPersonnelLists());
-  }, [dispatch]);
+  }}, [dispatch, personnelLists]);
+  
 
   // using useEffect to search user based on their first name
   useEffect(() => {
     setFilteredLists(
       personnelLists.filter((item) =>
-      // {console.log('item', item)
         item.name.first.toLowerCase().includes(search.toLowerCase())
       )
     );
